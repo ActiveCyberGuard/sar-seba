@@ -550,8 +550,8 @@ async function hashFarmer(nid, mobile){
 }
 
 /* ================= STORAGE ABSTRACTION =================
-   ১) Claude.ai আর্টিফ্যাক্ট প্রিভিউতে থাকলে -> window.storage ব্যবহার হবে (সবার জন্য শেয়ার্ড)
-   ২) GitHub/অন্য কোথাও হোস্ট করা হলে ও FIREBASE_CONFIG দেওয়া থাকলে -> Firestore ব্যবহার হবে (সবার জন্য শেয়ার্ড)
+   ১) Claude.ai আর্টিফ্যাক্ট প্রিভিউতে থাকলে -> window.storage ব্যবহার হবে
+   ২) GitHub/অন্য কোথাও হোস্ট করা হলে ও FIREBASE_CONFIG দেওয়া থাকলে -> Firestore ব্যবহার হবে
    ৩) কোনোটাই না থাকলে -> শুধু এই ব্রাউজারে (localStorage) সংরক্ষিত হবে
 ========================================================= */
 const Store = {
